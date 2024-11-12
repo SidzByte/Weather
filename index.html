@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="getData()">
+    <div class="box">
+        <h2 class="title">Weather Forecast</h2>
+        <input id="search" class="search" type="text" value="Nashik" placeholder="Enter city name" onchange="getData()">
+        <div class="weather-info">
+            <h1 id="temp">0<sup>°</sup></h1>
+            <p class="unit">Celsius</p>
+        </div>
+        <div class="additional-info">
+            <p class="data">Wind Speed: <span id="ws">0</span></p>
+            <p class="data">Humidity: <span id="hmdty">0</span></p>
+        </div>
+        <div class="image-container">
+            <img width="200px" src="weather.png" alt="Weather Icon">
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
